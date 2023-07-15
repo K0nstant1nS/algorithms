@@ -1,6 +1,7 @@
 {
   "name": "algorithms-project",
   "version": "0.1.0",
+  "homepage": "https://k0nstant1ns.github.io/algorithms/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
@@ -23,7 +24,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "cypress:open": "cypress open",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,8 +54,9 @@
     "@types/react-test-renderer": "^18.0.0",
     "cypress": "^12.13.0",
     "fetch-mock": "^9.11.0",
+    "gh-pages": "^5.0.0",
     "jest": "^27.5.1",
-    "react-test-renderer": "^18.0.0",
+    "react-test-renderer": "^18.2.0",
     "redux-mock-store": "^1.5.4"
   }
 }
